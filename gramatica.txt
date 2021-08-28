@@ -1,0 +1,18 @@
+abrir word
+abrir powerpoint
+abrir excel
+abrir paint
+abrir visual studio code
+abrir discord
+abrir netflix
+cerrar word
+cerrar powerpoint
+cerrar excel
+cerrar paint
+cerrar visual studio code
+cerrar discord
+cerrar netflix
+abrir arduino
+cerrar arduino
+aguacate
+pepino

@@ -26,9 +26,10 @@ Partial Class principal
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.btn_escuchar = New System.Windows.Forms.Button()
         Me.lbl_hablando = New System.Windows.Forms.Label()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.btn_dictar = New System.Windows.Forms.Button()
         Me.btn_Manual = New System.Windows.Forms.Button()
+        Me.lbl_corregir = New System.Windows.Forms.LinkLabel()
+        Me.lb_apps = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -44,10 +45,10 @@ Partial Class principal
         'TextBox1
         '
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(12, 77)
+        Me.TextBox1.Location = New System.Drawing.Point(12, 45)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(349, 134)
+        Me.TextBox1.Size = New System.Drawing.Size(349, 157)
         Me.TextBox1.TabIndex = 1
         '
         'btn_escuchar
@@ -63,17 +64,10 @@ Partial Class principal
         '
         Me.lbl_hablando.AutoSize = True
         Me.lbl_hablando.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.lbl_hablando.Location = New System.Drawing.Point(189, 195)
+        Me.lbl_hablando.Location = New System.Drawing.Point(15, 228)
         Me.lbl_hablando.Name = "lbl_hablando"
         Me.lbl_hablando.Size = New System.Drawing.Size(0, 16)
         Me.lbl_hablando.TabIndex = 3
-        '
-        'ProgressBar1
-        '
-        Me.ProgressBar1.Location = New System.Drawing.Point(12, 250)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(349, 23)
-        Me.ProgressBar1.TabIndex = 4
         '
         'btn_dictar
         '
@@ -93,15 +87,36 @@ Partial Class principal
         Me.btn_Manual.Text = "Manual"
         Me.btn_Manual.UseVisualStyleBackColor = True
         '
+        'lbl_corregir
+        '
+        Me.lbl_corregir.AutoSize = True
+        Me.lbl_corregir.LinkColor = System.Drawing.Color.White
+        Me.lbl_corregir.Location = New System.Drawing.Point(11, 28)
+        Me.lbl_corregir.Name = "lbl_corregir"
+        Me.lbl_corregir.Size = New System.Drawing.Size(32, 16)
+        Me.lbl_corregir.TabIndex = 7
+        Me.lbl_corregir.TabStop = True
+        Me.lbl_corregir.Text = "___"
+        '
+        'lb_apps
+        '
+        Me.lb_apps.FormattingEnabled = True
+        Me.lb_apps.ItemHeight = 16
+        Me.lb_apps.Location = New System.Drawing.Point(12, 209)
+        Me.lb_apps.Name = "lb_apps"
+        Me.lb_apps.Size = New System.Drawing.Size(349, 68)
+        Me.lb_apps.TabIndex = 8
+        '
         'principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(378, 338)
+        Me.ClientSize = New System.Drawing.Size(382, 338)
+        Me.Controls.Add(Me.lb_apps)
+        Me.Controls.Add(Me.lbl_corregir)
         Me.Controls.Add(Me.btn_Manual)
         Me.Controls.Add(Me.btn_dictar)
-        Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.lbl_hablando)
         Me.Controls.Add(Me.btn_escuchar)
         Me.Controls.Add(Me.TextBox1)
@@ -119,7 +134,8 @@ Partial Class principal
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents btn_escuchar As Button
     Friend WithEvents lbl_hablando As Label
-    Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents btn_dictar As Button
     Friend WithEvents btn_Manual As Button
+    Friend WithEvents lbl_corregir As LinkLabel
+    Friend WithEvents lb_apps As ListBox
 End Class
