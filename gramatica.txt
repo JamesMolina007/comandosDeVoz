@@ -16,3 +16,7 @@ abrir arduino
 cerrar arduino
 aguacate
 pepino
+abrir Google Chrome
+cerrar Google Chrome
+abrir access
+cerrar access

@@ -22,6 +22,7 @@ Partial Class diccionario
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(diccionario))
         Me.cb_categoria = New System.Windows.Forms.ComboBox()
         Me.tb_palabra = New System.Windows.Forms.TextBox()
         Me.btn_agregar = New System.Windows.Forms.Button()
@@ -49,28 +50,33 @@ Partial Class diccionario
         '
         'btn_agregar
         '
+        Me.btn_agregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_agregar.Image = CType(resources.GetObject("btn_agregar.Image"), System.Drawing.Image)
         Me.btn_agregar.Location = New System.Drawing.Point(107, 105)
         Me.btn_agregar.Name = "btn_agregar"
-        Me.btn_agregar.Size = New System.Drawing.Size(75, 23)
+        Me.btn_agregar.Size = New System.Drawing.Size(75, 61)
         Me.btn_agregar.TabIndex = 2
         Me.btn_agregar.Text = "Agregar"
+        Me.btn_agregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btn_agregar.UseVisualStyleBackColor = True
         '
         'lbl_palabra
         '
         Me.lbl_palabra.AutoSize = True
+        Me.lbl_palabra.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_palabra.Location = New System.Drawing.Point(13, 8)
         Me.lbl_palabra.Name = "lbl_palabra"
-        Me.lbl_palabra.Size = New System.Drawing.Size(19, 13)
+        Me.lbl_palabra.Size = New System.Drawing.Size(21, 13)
         Me.lbl_palabra.TabIndex = 3
         Me.lbl_palabra.Text = "__"
         '
         'lbl_categoria
         '
         Me.lbl_categoria.AutoSize = True
+        Me.lbl_categoria.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_categoria.Location = New System.Drawing.Point(13, 62)
         Me.lbl_categoria.Name = "lbl_categoria"
-        Me.lbl_categoria.Size = New System.Drawing.Size(52, 13)
+        Me.lbl_categoria.Size = New System.Drawing.Size(61, 13)
         Me.lbl_categoria.TabIndex = 4
         Me.lbl_categoria.Text = "Categoria"
         '
@@ -78,7 +84,8 @@ Partial Class diccionario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 139)
+        Me.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.ClientSize = New System.Drawing.Size(284, 178)
         Me.Controls.Add(Me.lbl_categoria)
         Me.Controls.Add(Me.lbl_palabra)
         Me.Controls.Add(Me.btn_agregar)
