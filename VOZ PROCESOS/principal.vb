@@ -1,20 +1,19 @@
 ﻿Imports System.Speech.Recognition
 Imports System.IO
-Imports System.Security
-Imports System.Security.Principal
 
 Public Class principal
-    Public ventanas As Int16
-    Dim com As New comando
-    Dim hablar As Boolean = False
-    Dim dictar As Boolean = False
+    Private ventanas As Int16
+    Private com As New comando
+    Private hablar As Boolean = False
+    Private dictar As Boolean = False
+    Private corriendo As Boolean = False
 
     'WINDOWS
     Private WithEvents listener As New SpeechRecognizer
 
     'DICCIONARIO
-    Dim REC As New SpeechRecognitionEngine
-    Dim PALABRA As String
+    Private REC As New SpeechRecognitionEngine
+    Private PALABRA As String
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'WINDOWS
@@ -23,7 +22,7 @@ Public Class principal
 
         'DICCIONARIO
         REC.SetInputToDefaultAudioDevice()
-        REC.LoadGrammar(New Grammar(New GrammarBuilder(New Choices(File.ReadAllLines("../../../gramatica.txt")))
+        REC.LoadGrammar(New Grammar(New GrammarBuilder(New Choices(File.ReadAllLines("../../../gramatica.txt")))))
         REC.RecognizeAsync(RecognizeMode.Multiple)
         AddHandler REC.SpeechRecognized, AddressOf RECONOCE
         AddHandler REC.SpeechRecognitionRejected, AddressOf NORECONOCE
@@ -33,7 +32,7 @@ Public Class principal
 
     Private Sub listener_SpeechRecognized(sender As Object, e As SpeechRecognizedEventArgs) Handles listener.SpeechRecognized
         If (dictar) Then
-            TextBox1.Text += e.Result.Text + " "
+            tb_comando.Text += e.Result.Text + " "
         End If
     End Sub
 
@@ -48,6 +47,7 @@ Public Class principal
                 btn_escuchar.Text = "Hablar"
                 lbl_hablando.Text = ""
                 hablar = False
+                corriendo = False
             End If
         End If
     End Sub
@@ -58,7 +58,7 @@ Public Class principal
             apuntadorDireccion.Items.Clear()
             If (dictar = False) Then
                 lbl_corregir.Text = ""
-                TextBox1.Text = ""
+                tb_comando.Text = ""
                 lbl_hablando.Text = "Comience a Dictar.."
                 btn_dictar.Text = "Detener"
                 dictar = True
@@ -73,15 +73,16 @@ Public Class principal
 
     Public Sub RECONOCE(ByVal sender As Object, ByVal e As SpeechRecognizedEventArgs)
         If (hablar) Then
-            com.listBox = lb_apps
-            com.listBoxDireccion = apuntadorDireccion
-            com.cadenaComando = e.Result.Text
-            com.leerComando()
-
-            Dim RESULTADO As RecognitionResult = e.Result
-            TextBox1.Text = RESULTADO.Text.ToUpper
-            Dim PROCESO As New Process
-            lbl_corregir.Text = "No fue lo que dije!"
+            If (Not corriendo) Then
+                corriendo = True
+                Dim RESULTADO As RecognitionResult = e.Result
+                tb_comando.Text = RESULTADO.Text.ToUpper
+                lbl_corregir.Text = "No fue lo que dije!"
+                com.listBox = lb_apps
+                com.listBoxDireccion = apuntadorDireccion
+                com.cadenaComando = e.Result.Text
+                com.leerComando()
+            End If
         End If
     End Sub
 
@@ -93,10 +94,12 @@ Public Class principal
     End Sub
 
     Private Sub lbl_corregir_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lbl_corregir.LinkClicked
-        Dim nuevaPalabra As New diccionario
-        nuevaPalabra.Visible = True
-        ventanas += 1
-        Me.Close()
+        If (lbl_corregir.Text <> "___") Then
+            Dim nuevaPalabra As New diccionario
+            nuevaPalabra.Visible = True
+            ventanas += 1
+            Me.Close()
+        End If
     End Sub
 
     Private Sub principal_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
@@ -108,12 +111,15 @@ Public Class principal
 
     Private Sub btn_Manual_Click(sender As Object, e As EventArgs) Handles btn_Manual.Click
         ventanas += 1
+        Dim instrucciones As New manual
+        instrucciones.Visible = True
+        Me.Close()
     End Sub
 
     Private Sub lb_apps_DoubleClick(sender As Object, e As EventArgs) Handles lb_apps.DoubleClick
         Dim id = lb_apps.SelectedIndex
         Dim direccion = apuntadorDireccion.Items(id)
-        com.abrirAplicacion(direccion, False)
+        com.accion(direccion, False)
     End Sub
 
 End Class

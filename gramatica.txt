@@ -14,9 +14,13 @@ cerrar discord
 cerrar netflix
 abrir arduino
 cerrar arduino
-aguacate
-pepino
+cuentame un chiste
+crear archivo
 abrir Google Chrome
 cerrar Google Chrome
 abrir access
 cerrar access
+abrir calculadora
+cerrar calculadora
+buscar
+reproducir 

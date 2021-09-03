@@ -24,7 +24,7 @@ Partial Class principal
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(principal))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.tb_comando = New System.Windows.Forms.TextBox()
         Me.btn_escuchar = New System.Windows.Forms.Button()
         Me.lbl_hablando = New System.Windows.Forms.Label()
         Me.btn_dictar = New System.Windows.Forms.Button()
@@ -33,8 +33,8 @@ Partial Class principal
         Me.lb_apps = New System.Windows.Forms.ListBox()
         Me.apuntadorDireccion = New System.Windows.Forms.ListBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.rb_diccionario = New System.Windows.Forms.RadioButton()
+        Me.rb_windows = New System.Windows.Forms.RadioButton()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -48,14 +48,14 @@ Partial Class principal
         Me.Label1.Size = New System.Drawing.Size(0, 29)
         Me.Label1.TabIndex = 0
         '
-        'TextBox1
+        'tb_comando
         '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(12, 68)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(349, 157)
-        Me.TextBox1.TabIndex = 1
+        Me.tb_comando.Enabled = False
+        Me.tb_comando.Location = New System.Drawing.Point(12, 68)
+        Me.tb_comando.Multiline = True
+        Me.tb_comando.Name = "tb_comando"
+        Me.tb_comando.Size = New System.Drawing.Size(349, 157)
+        Me.tb_comando.TabIndex = 1
         '
         'btn_escuchar
         '
@@ -72,7 +72,7 @@ Partial Class principal
         '
         Me.lbl_hablando.AutoSize = True
         Me.lbl_hablando.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.lbl_hablando.Location = New System.Drawing.Point(229, 51)
+        Me.lbl_hablando.Location = New System.Drawing.Point(207, 51)
         Me.lbl_hablando.Name = "lbl_hablando"
         Me.lbl_hablando.Size = New System.Drawing.Size(32, 16)
         Me.lbl_hablando.TabIndex = 3
@@ -132,37 +132,37 @@ Partial Class principal
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.GroupBox1.Controls.Add(Me.rb_diccionario)
+        Me.GroupBox1.Controls.Add(Me.rb_windows)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 0)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(349, 33)
         Me.GroupBox1.TabIndex = 10
         Me.GroupBox1.TabStop = False
         '
-        'RadioButton2
+        'rb_diccionario
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.RadioButton2.Location = New System.Drawing.Point(104, 10)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(105, 20)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Diccionario"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.rb_diccionario.AutoSize = True
+        Me.rb_diccionario.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.rb_diccionario.Location = New System.Drawing.Point(104, 10)
+        Me.rb_diccionario.Name = "rb_diccionario"
+        Me.rb_diccionario.Size = New System.Drawing.Size(105, 20)
+        Me.rb_diccionario.TabIndex = 1
+        Me.rb_diccionario.TabStop = True
+        Me.rb_diccionario.Text = "Diccionario"
+        Me.rb_diccionario.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'rb_windows
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.RadioButton1.Location = New System.Drawing.Point(6, 10)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(88, 20)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Windows"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.rb_windows.AutoSize = True
+        Me.rb_windows.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.rb_windows.Location = New System.Drawing.Point(6, 10)
+        Me.rb_windows.Name = "rb_windows"
+        Me.rb_windows.Size = New System.Drawing.Size(88, 20)
+        Me.rb_windows.TabIndex = 0
+        Me.rb_windows.TabStop = True
+        Me.rb_windows.Text = "Windows"
+        Me.rb_windows.UseVisualStyleBackColor = True
         '
         'principal
         '
@@ -178,7 +178,7 @@ Partial Class principal
         Me.Controls.Add(Me.btn_dictar)
         Me.Controls.Add(Me.lbl_hablando)
         Me.Controls.Add(Me.btn_escuchar)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.tb_comando)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4)
@@ -192,7 +192,7 @@ Partial Class principal
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents tb_comando As TextBox
     Friend WithEvents btn_escuchar As Button
     Friend WithEvents lbl_hablando As Label
     Friend WithEvents btn_dictar As Button
@@ -201,6 +201,6 @@ Partial Class principal
     Friend WithEvents lb_apps As ListBox
     Friend WithEvents apuntadorDireccion As ListBox
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents rb_diccionario As RadioButton
+    Friend WithEvents rb_windows As RadioButton
 End Class

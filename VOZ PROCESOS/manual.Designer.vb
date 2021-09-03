@@ -23,118 +23,118 @@ Partial Class manual
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(manual))
-        Me.aplicaciones = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel5 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel6 = New System.Windows.Forms.LinkLabel()
+        Me.lbl_aplicaciones = New System.Windows.Forms.LinkLabel()
+        Me.lbl_web = New System.Windows.Forms.LinkLabel()
+        Me.lbl_dictar = New System.Windows.Forms.LinkLabel()
+        Me.lbl_archivos = New System.Windows.Forms.LinkLabel()
+        Me.lbl_musica = New System.Windows.Forms.LinkLabel()
+        Me.lbl_busqueda = New System.Windows.Forms.LinkLabel()
+        Me.lbl_extras = New System.Windows.Forms.LinkLabel()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.btn_hablar = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btn_siguiente = New System.Windows.Forms.Button()
+        Me.btn_anterior = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'aplicaciones
+        'lbl_aplicaciones
         '
-        Me.aplicaciones.AutoSize = True
-        Me.aplicaciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.aplicaciones.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.aplicaciones.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.aplicaciones.LinkColor = System.Drawing.Color.Black
-        Me.aplicaciones.Location = New System.Drawing.Point(6, 19)
-        Me.aplicaciones.Name = "aplicaciones"
-        Me.aplicaciones.Size = New System.Drawing.Size(110, 20)
-        Me.aplicaciones.TabIndex = 0
-        Me.aplicaciones.TabStop = True
-        Me.aplicaciones.Text = "Aplicaciones"
+        Me.lbl_aplicaciones.AutoSize = True
+        Me.lbl_aplicaciones.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_aplicaciones.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbl_aplicaciones.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.lbl_aplicaciones.LinkColor = System.Drawing.Color.Black
+        Me.lbl_aplicaciones.Location = New System.Drawing.Point(6, 19)
+        Me.lbl_aplicaciones.Name = "lbl_aplicaciones"
+        Me.lbl_aplicaciones.Size = New System.Drawing.Size(110, 20)
+        Me.lbl_aplicaciones.TabIndex = 0
+        Me.lbl_aplicaciones.TabStop = True
+        Me.lbl_aplicaciones.Text = "Aplicaciones"
         '
-        'LinkLabel1
+        'lbl_web
         '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.LinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.Black
-        Me.LinkLabel1.Location = New System.Drawing.Point(6, 49)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(45, 20)
-        Me.LinkLabel1.TabIndex = 1
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Web"
+        Me.lbl_web.AutoSize = True
+        Me.lbl_web.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_web.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbl_web.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.lbl_web.LinkColor = System.Drawing.Color.Black
+        Me.lbl_web.Location = New System.Drawing.Point(6, 49)
+        Me.lbl_web.Name = "lbl_web"
+        Me.lbl_web.Size = New System.Drawing.Size(45, 20)
+        Me.lbl_web.TabIndex = 1
+        Me.lbl_web.TabStop = True
+        Me.lbl_web.Text = "Web"
         '
-        'LinkLabel2
+        'lbl_dictar
         '
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.LinkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.LinkLabel2.LinkColor = System.Drawing.Color.Black
-        Me.LinkLabel2.Location = New System.Drawing.Point(6, 80)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(57, 20)
-        Me.LinkLabel2.TabIndex = 2
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "Dictar"
+        Me.lbl_dictar.AutoSize = True
+        Me.lbl_dictar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_dictar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbl_dictar.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.lbl_dictar.LinkColor = System.Drawing.Color.Black
+        Me.lbl_dictar.Location = New System.Drawing.Point(6, 80)
+        Me.lbl_dictar.Name = "lbl_dictar"
+        Me.lbl_dictar.Size = New System.Drawing.Size(57, 20)
+        Me.lbl_dictar.TabIndex = 2
+        Me.lbl_dictar.TabStop = True
+        Me.lbl_dictar.Text = "Dictar"
         '
-        'LinkLabel3
+        'lbl_archivos
         '
-        Me.LinkLabel3.AutoSize = True
-        Me.LinkLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.LinkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.LinkLabel3.LinkColor = System.Drawing.Color.Black
-        Me.LinkLabel3.Location = New System.Drawing.Point(6, 109)
-        Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(126, 20)
-        Me.LinkLabel3.TabIndex = 3
-        Me.LinkLabel3.TabStop = True
-        Me.LinkLabel3.Text = "Crear Archivos"
+        Me.lbl_archivos.AutoSize = True
+        Me.lbl_archivos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_archivos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbl_archivos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.lbl_archivos.LinkColor = System.Drawing.Color.Black
+        Me.lbl_archivos.Location = New System.Drawing.Point(6, 109)
+        Me.lbl_archivos.Name = "lbl_archivos"
+        Me.lbl_archivos.Size = New System.Drawing.Size(126, 20)
+        Me.lbl_archivos.TabIndex = 3
+        Me.lbl_archivos.TabStop = True
+        Me.lbl_archivos.Text = "Crear Archivos"
         '
-        'LinkLabel4
+        'lbl_musica
         '
-        Me.LinkLabel4.AutoSize = True
-        Me.LinkLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.LinkLabel4.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.LinkLabel4.LinkColor = System.Drawing.Color.Black
-        Me.LinkLabel4.Location = New System.Drawing.Point(6, 139)
-        Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(65, 20)
-        Me.LinkLabel4.TabIndex = 4
-        Me.LinkLabel4.TabStop = True
-        Me.LinkLabel4.Text = "Música"
+        Me.lbl_musica.AutoSize = True
+        Me.lbl_musica.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_musica.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbl_musica.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.lbl_musica.LinkColor = System.Drawing.Color.Black
+        Me.lbl_musica.Location = New System.Drawing.Point(6, 139)
+        Me.lbl_musica.Name = "lbl_musica"
+        Me.lbl_musica.Size = New System.Drawing.Size(65, 20)
+        Me.lbl_musica.TabIndex = 4
+        Me.lbl_musica.TabStop = True
+        Me.lbl_musica.Text = "Música"
         '
-        'LinkLabel5
+        'lbl_busqueda
         '
-        Me.LinkLabel5.AutoSize = True
-        Me.LinkLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.LinkLabel5.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.LinkLabel5.LinkColor = System.Drawing.Color.Black
-        Me.LinkLabel5.Location = New System.Drawing.Point(6, 167)
-        Me.LinkLabel5.Name = "LinkLabel5"
-        Me.LinkLabel5.Size = New System.Drawing.Size(90, 20)
-        Me.LinkLabel5.TabIndex = 5
-        Me.LinkLabel5.TabStop = True
-        Me.LinkLabel5.Text = "Búsqueda"
+        Me.lbl_busqueda.AutoSize = True
+        Me.lbl_busqueda.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_busqueda.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbl_busqueda.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.lbl_busqueda.LinkColor = System.Drawing.Color.Black
+        Me.lbl_busqueda.Location = New System.Drawing.Point(6, 167)
+        Me.lbl_busqueda.Name = "lbl_busqueda"
+        Me.lbl_busqueda.Size = New System.Drawing.Size(90, 20)
+        Me.lbl_busqueda.TabIndex = 5
+        Me.lbl_busqueda.TabStop = True
+        Me.lbl_busqueda.Text = "Búsqueda"
         '
-        'LinkLabel6
+        'lbl_extras
         '
-        Me.LinkLabel6.AutoSize = True
-        Me.LinkLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.LinkLabel6.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.LinkLabel6.LinkColor = System.Drawing.Color.Black
-        Me.LinkLabel6.Location = New System.Drawing.Point(6, 197)
-        Me.LinkLabel6.Name = "LinkLabel6"
-        Me.LinkLabel6.Size = New System.Drawing.Size(60, 20)
-        Me.LinkLabel6.TabIndex = 6
-        Me.LinkLabel6.TabStop = True
-        Me.LinkLabel6.Text = "Extras"
+        Me.lbl_extras.AutoSize = True
+        Me.lbl_extras.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_extras.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbl_extras.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.lbl_extras.LinkColor = System.Drawing.Color.Black
+        Me.lbl_extras.Location = New System.Drawing.Point(6, 197)
+        Me.lbl_extras.Name = "lbl_extras"
+        Me.lbl_extras.Size = New System.Drawing.Size(60, 20)
+        Me.lbl_extras.TabIndex = 6
+        Me.lbl_extras.TabStop = True
+        Me.lbl_extras.Text = "Extras"
         '
         'TextBox1
         '
@@ -157,40 +157,40 @@ Partial Class manual
         Me.btn_hablar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btn_hablar.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btn_siguiente
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.Location = New System.Drawing.Point(352, 235)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 50)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Siguiente"
-        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_siguiente.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_siguiente.Image = CType(resources.GetObject("btn_siguiente.Image"), System.Drawing.Image)
+        Me.btn_siguiente.Location = New System.Drawing.Point(352, 235)
+        Me.btn_siguiente.Name = "btn_siguiente"
+        Me.btn_siguiente.Size = New System.Drawing.Size(75, 50)
+        Me.btn_siguiente.TabIndex = 9
+        Me.btn_siguiente.Text = "Siguiente"
+        Me.btn_siguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btn_siguiente.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btn_anterior
         '
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.Location = New System.Drawing.Point(171, 235)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 50)
-        Me.Button3.TabIndex = 10
-        Me.Button3.Text = "Anterior"
-        Me.Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btn_anterior.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_anterior.Image = CType(resources.GetObject("btn_anterior.Image"), System.Drawing.Image)
+        Me.btn_anterior.Location = New System.Drawing.Point(171, 235)
+        Me.btn_anterior.Name = "btn_anterior"
+        Me.btn_anterior.Size = New System.Drawing.Size(75, 50)
+        Me.btn_anterior.TabIndex = 10
+        Me.btn_anterior.Text = "Anterior"
+        Me.btn_anterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btn_anterior.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.GroupBox1.Controls.Add(Me.LinkLabel1)
-        Me.GroupBox1.Controls.Add(Me.aplicaciones)
-        Me.GroupBox1.Controls.Add(Me.LinkLabel2)
-        Me.GroupBox1.Controls.Add(Me.LinkLabel3)
-        Me.GroupBox1.Controls.Add(Me.LinkLabel4)
-        Me.GroupBox1.Controls.Add(Me.LinkLabel6)
-        Me.GroupBox1.Controls.Add(Me.LinkLabel5)
+        Me.GroupBox1.Controls.Add(Me.lbl_web)
+        Me.GroupBox1.Controls.Add(Me.lbl_aplicaciones)
+        Me.GroupBox1.Controls.Add(Me.lbl_dictar)
+        Me.GroupBox1.Controls.Add(Me.lbl_archivos)
+        Me.GroupBox1.Controls.Add(Me.lbl_musica)
+        Me.GroupBox1.Controls.Add(Me.lbl_extras)
+        Me.GroupBox1.Controls.Add(Me.lbl_busqueda)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(153, 288)
@@ -204,8 +204,8 @@ Partial Class manual
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(439, 312)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btn_anterior)
+        Me.Controls.Add(Me.btn_siguiente)
         Me.Controls.Add(Me.btn_hablar)
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "manual"
@@ -217,16 +217,16 @@ Partial Class manual
 
     End Sub
 
-    Friend WithEvents aplicaciones As LinkLabel
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents LinkLabel2 As LinkLabel
-    Friend WithEvents LinkLabel3 As LinkLabel
-    Friend WithEvents LinkLabel4 As LinkLabel
-    Friend WithEvents LinkLabel5 As LinkLabel
-    Friend WithEvents LinkLabel6 As LinkLabel
+    Friend WithEvents lbl_aplicaciones As LinkLabel
+    Friend WithEvents lbl_web As LinkLabel
+    Friend WithEvents lbl_dictar As LinkLabel
+    Friend WithEvents lbl_archivos As LinkLabel
+    Friend WithEvents lbl_musica As LinkLabel
+    Friend WithEvents lbl_busqueda As LinkLabel
+    Friend WithEvents lbl_extras As LinkLabel
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents btn_hablar As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btn_siguiente As Button
+    Friend WithEvents btn_anterior As Button
     Friend WithEvents GroupBox1 As GroupBox
 End Class
