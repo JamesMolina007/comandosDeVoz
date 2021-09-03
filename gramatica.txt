@@ -23,4 +23,7 @@ cerrar access
 abrir calculadora
 cerrar calculadora
 buscar
-reproducir 
+buscar video
+musica
+reproducir musica
+buscar musica

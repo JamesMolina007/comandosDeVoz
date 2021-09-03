@@ -22,15 +22,19 @@
 
         Dim tokens = tb_busqueda.Text.Split(" ")
         Dim cadena As String
-        If (Me.Text = "Música") Then
-            cadena = "https://www.youtube.com/results?search_query="
+        If (Me.Text <> "Páginas Web") Then
+            If (Me.Text = "Música") Then
+                cadena = "https://www.youtube.com/results?search_query="
+            ElseIf (Me.Text = "Busqueda") Then
+                cadena = "https://www.google.com/search?q="
+            End If
+            For index = 0 To tokens.Length - 1
+                cadena += tokens(index)
+                cadena += "+"
+            Next
         Else
-            cadena = "https://www.google.com/search?q="
+            cadena = tb_busqueda.Text
         End If
-        For index = 0 To tokens.Length - 1
-            cadena += tokens(index)
-            cadena += "+"
-        Next
         System.Diagnostics.Process.Start(cadena)
     End Sub
 

@@ -51,21 +51,28 @@ Public Class comando
         If (elementosComando(0).Contains("abr") Or elementosComando(0).Contains("ejecut")) Then
             abrirAplicacion(valores(1), True)
             abrir = True
+
         ElseIf (elementosComando(0).Contains("cierr") Or elementosComando(0).Contains("cerra")) Then
             cerrarAplicacion(valores(1), True)
             abrir = False
+
         ElseIf (elementosComando(0).Contains("bus")) Then
-            web("Busqueda", "Contenido a Buscar:")
-        ElseIf (elementosComando(0).Contains("reprod")) Then
-            web("Música", "Canción a Buscar: ")
-        ElseIf (elementosComando(0).Contains("cre")) Then
-            If (elementosComando.Contains("archivo")) Then
-                crearArchivo()
+            If (elementosComando.Contains("video")) Then
+                web("Música", "Canción a Buscar: ")
+            ElseIf (elementosComando.Contains("pagina")) Then
+                web("Páginas Web", "URL:")
+            Else
+                web("Busqueda", "Contenido a Buscar:")
             End If
-        ElseIf (elementosComando(0).Contains("cont") Or elementosComando(0).Contains("cuent")) Then
-            If (elementosComando.Contains("chiste")) Then
-                chiste()
-            End If
+
+        ElseIf (elementosComando(0).Contains("reprod") And (elementosComando.Contains("musica"))) Then
+            musica()
+
+        ElseIf (elementosComando(0).Contains("cre") And elementosComando.Contains("archivo")) Then
+            crearArchivo()
+
+        ElseIf ((elementosComando(0).Contains("cont") Or elementosComando(0).Contains("cuent")) And elementosComando.Contains("chiste")) Then
+            chiste()
         End If
 
     End Sub
@@ -158,6 +165,11 @@ Public Class comando
         buscar.titulo = label
         buscar.Text = titulo
         buscar.Visible = True
+    End Sub
+
+    Private Sub musica()
+        Dim mus As New musica
+        mus.Visible = True
     End Sub
 
     Private Sub crearArchivo()
