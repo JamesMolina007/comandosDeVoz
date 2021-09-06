@@ -60,7 +60,7 @@ Partial Class busqueda
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(422, 76)
+        Me.ClientSize = New System.Drawing.Size(422, 85)
         Me.Controls.Add(Me.lbl_busqueda)
         Me.Controls.Add(Me.btn_buscar)
         Me.Controls.Add(Me.tb_busqueda)

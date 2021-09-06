@@ -27,3 +27,5 @@ buscar video
 musica
 reproducir musica
 buscar musica
+cumplo años
+estoy cumpliendo años

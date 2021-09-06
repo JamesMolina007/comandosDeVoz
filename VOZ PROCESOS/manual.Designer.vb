@@ -30,11 +30,12 @@ Partial Class manual
         Me.lbl_musica = New System.Windows.Forms.LinkLabel()
         Me.lbl_busqueda = New System.Windows.Forms.LinkLabel()
         Me.lbl_extras = New System.Windows.Forms.LinkLabel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.tb_tutorial = New System.Windows.Forms.TextBox()
         Me.btn_hablar = New System.Windows.Forms.Button()
         Me.btn_siguiente = New System.Windows.Forms.Button()
         Me.btn_anterior = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lbl_repetir = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -136,14 +137,14 @@ Partial Class manual
         Me.lbl_extras.TabStop = True
         Me.lbl_extras.Text = "Extras"
         '
-        'TextBox1
+        'tb_tutorial
         '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(171, 14)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(256, 201)
-        Me.TextBox1.TabIndex = 7
+        Me.tb_tutorial.Enabled = False
+        Me.tb_tutorial.Location = New System.Drawing.Point(171, 14)
+        Me.tb_tutorial.Multiline = True
+        Me.tb_tutorial.Name = "tb_tutorial"
+        Me.tb_tutorial.Size = New System.Drawing.Size(256, 201)
+        Me.tb_tutorial.TabIndex = 7
         '
         'btn_hablar
         '
@@ -197,18 +198,31 @@ Partial Class manual
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         '
+        'lbl_repetir
+        '
+        Me.lbl_repetir.AutoSize = True
+        Me.lbl_repetir.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lbl_repetir.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_repetir.ForeColor = System.Drawing.Color.Red
+        Me.lbl_repetir.Location = New System.Drawing.Point(171, 195)
+        Me.lbl_repetir.Name = "lbl_repetir"
+        Me.lbl_repetir.Size = New System.Drawing.Size(0, 18)
+        Me.lbl_repetir.TabIndex = 12
+        '
         'manual
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(439, 312)
+        Me.Controls.Add(Me.lbl_repetir)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btn_anterior)
         Me.Controls.Add(Me.btn_siguiente)
         Me.Controls.Add(Me.btn_hablar)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.tb_tutorial)
         Me.Name = "manual"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Manual de Usuario"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -224,9 +238,10 @@ Partial Class manual
     Friend WithEvents lbl_musica As LinkLabel
     Friend WithEvents lbl_busqueda As LinkLabel
     Friend WithEvents lbl_extras As LinkLabel
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents tb_tutorial As TextBox
     Friend WithEvents btn_hablar As Button
     Friend WithEvents btn_siguiente As Button
     Friend WithEvents btn_anterior As Button
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents lbl_repetir As Label
 End Class

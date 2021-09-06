@@ -44,30 +44,32 @@ Partial Class musica
         '
         'btn_Anterior
         '
+        Me.btn_Anterior.BackgroundImage = CType(resources.GetObject("btn_Anterior.BackgroundImage"), System.Drawing.Image)
         Me.btn_Anterior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btn_Anterior.Location = New System.Drawing.Point(204, -2)
+        Me.btn_Anterior.Location = New System.Drawing.Point(206, -1)
         Me.btn_Anterior.Name = "btn_Anterior"
         Me.btn_Anterior.Size = New System.Drawing.Size(75, 52)
         Me.btn_Anterior.TabIndex = 0
-        Me.btn_Anterior.Text = "Anterior"
         Me.btn_Anterior.UseVisualStyleBackColor = True
         '
         'btn_reproducir
         '
-        Me.btn_reproducir.Location = New System.Drawing.Point(278, -2)
+        Me.btn_reproducir.BackgroundImage = CType(resources.GetObject("btn_reproducir.BackgroundImage"), System.Drawing.Image)
+        Me.btn_reproducir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_reproducir.Location = New System.Drawing.Point(280, -1)
         Me.btn_reproducir.Name = "btn_reproducir"
-        Me.btn_reproducir.Size = New System.Drawing.Size(75, 52)
+        Me.btn_reproducir.Size = New System.Drawing.Size(56, 52)
         Me.btn_reproducir.TabIndex = 1
-        Me.btn_reproducir.Text = "Reproducir"
         Me.btn_reproducir.UseVisualStyleBackColor = True
         '
         'btn_Siguiente
         '
-        Me.btn_Siguiente.Location = New System.Drawing.Point(352, -2)
+        Me.btn_Siguiente.BackgroundImage = CType(resources.GetObject("btn_Siguiente.BackgroundImage"), System.Drawing.Image)
+        Me.btn_Siguiente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_Siguiente.Location = New System.Drawing.Point(335, -1)
         Me.btn_Siguiente.Name = "btn_Siguiente"
         Me.btn_Siguiente.Size = New System.Drawing.Size(75, 52)
         Me.btn_Siguiente.TabIndex = 2
-        Me.btn_Siguiente.Text = "Siguiente"
         Me.btn_Siguiente.UseVisualStyleBackColor = True
         '
         'AxWindowsMediaPlayer1
@@ -77,7 +79,7 @@ Partial Class musica
         Me.AxWindowsMediaPlayer1.Location = New System.Drawing.Point(0, 268)
         Me.AxWindowsMediaPlayer1.Name = "AxWindowsMediaPlayer1"
         Me.AxWindowsMediaPlayer1.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(489, 49)
+        Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(409, 49)
         Me.AxWindowsMediaPlayer1.TabIndex = 8
         '
         'lb_cola
@@ -85,14 +87,14 @@ Partial Class musica
         Me.lb_cola.FormattingEnabled = True
         Me.lb_cola.Location = New System.Drawing.Point(0, 48)
         Me.lb_cola.Name = "lb_cola"
-        Me.lb_cola.Size = New System.Drawing.Size(489, 134)
+        Me.lb_cola.Size = New System.Drawing.Size(410, 134)
         Me.lb_cola.TabIndex = 9
         '
         'btn_agregarCola
         '
         Me.btn_agregarCola.BackgroundImage = CType(resources.GetObject("btn_agregarCola.BackgroundImage"), System.Drawing.Image)
         Me.btn_agregarCola.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btn_agregarCola.Location = New System.Drawing.Point(0, -2)
+        Me.btn_agregarCola.Location = New System.Drawing.Point(1, -1)
         Me.btn_agregarCola.Name = "btn_agregarCola"
         Me.btn_agregarCola.Size = New System.Drawing.Size(63, 52)
         Me.btn_agregarCola.TabIndex = 10
@@ -102,7 +104,7 @@ Partial Class musica
         '
         Me.btn_limpiarCola.BackgroundImage = CType(resources.GetObject("btn_limpiarCola.BackgroundImage"), System.Drawing.Image)
         Me.btn_limpiarCola.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btn_limpiarCola.Location = New System.Drawing.Point(61, -2)
+        Me.btn_limpiarCola.Location = New System.Drawing.Point(62, -1)
         Me.btn_limpiarCola.Name = "btn_limpiarCola"
         Me.btn_limpiarCola.Size = New System.Drawing.Size(76, 52)
         Me.btn_limpiarCola.TabIndex = 11
@@ -112,7 +114,7 @@ Partial Class musica
         '
         Me.btn_quitarDeCola.BackgroundImage = CType(resources.GetObject("btn_quitarDeCola.BackgroundImage"), System.Drawing.Image)
         Me.btn_quitarDeCola.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btn_quitarDeCola.Location = New System.Drawing.Point(135, -2)
+        Me.btn_quitarDeCola.Location = New System.Drawing.Point(136, -1)
         Me.btn_quitarDeCola.Name = "btn_quitarDeCola"
         Me.btn_quitarDeCola.Size = New System.Drawing.Size(72, 52)
         Me.btn_quitarDeCola.TabIndex = 12
@@ -123,7 +125,7 @@ Partial Class musica
         Me.lb_direcciones.FormattingEnabled = True
         Me.lb_direcciones.Location = New System.Drawing.Point(0, 48)
         Me.lb_direcciones.Name = "lb_direcciones"
-        Me.lb_direcciones.Size = New System.Drawing.Size(439, 4)
+        Me.lb_direcciones.Size = New System.Drawing.Size(410, 4)
         Me.lb_direcciones.TabIndex = 13
         Me.lb_direcciones.Visible = False
         '
@@ -185,7 +187,7 @@ Partial Class musica
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(489, 317)
+        Me.ClientSize = New System.Drawing.Size(409, 317)
         Me.Controls.Add(Me.lbl_reproduciendo)
         Me.Controls.Add(Me.Reproduciendo)
         Me.Controls.Add(Me.lbl_siguiente)
