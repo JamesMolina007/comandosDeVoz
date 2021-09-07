@@ -11,6 +11,7 @@ C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VO
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ PROCESOS.xml
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ PROCESOS.pdb
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\comandosVoz.vbprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\comandosVoz.vbproj.AssemblyReference.cache
 C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.diccionario.resources
 C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.manual.resources
@@ -26,3 +27,19 @@ C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\bin\Deb
 C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\bin\Debug\VOZ PROCESOS.xml
 C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\bin\Debug\itextsharp.dll
 C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\comandosVoz.vbproj.CopyComplete
+=======
+C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.busqueda.resources
+C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\bin\Debug\Interop.WMPLib.dll
+C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\Interop.WMPLib.dll
+C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\AxInterop.WMPLib.dll
+C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\comandosVoz.vbproj.ResolveComReference.cache
+C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.musica.resources
+>>>>>>> 65a6eafdb77478529493bf4aeac895ed45c9b55b
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\bin\Debug\Interop.WMPLib.dll
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\Interop.WMPLib.dll
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\AxInterop.WMPLib.dll
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\comandosVoz.vbproj.ResolveComReference.cache
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.busqueda.resources
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.musica.resources

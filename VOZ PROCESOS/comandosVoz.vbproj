@@ -80,6 +80,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="busqueda.Designer.vb">
+      <DependentUpon>busqueda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="busqueda.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="comando.vb" />
     <Compile Include="diccionario.Designer.vb">
       <DependentUpon>diccionario.vb</DependentUpon>
@@ -91,6 +97,12 @@
       <DependentUpon>manual.vb</DependentUpon>
     </Compile>
     <Compile Include="manual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musica.Designer.vb">
+      <DependentUpon>musica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="musica.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="principal.vb">
@@ -117,11 +129,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="busqueda.resx">
+      <DependentUpon>busqueda.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="diccionario.resx">
       <DependentUpon>diccionario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="manual.resx">
       <DependentUpon>manual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musica.resx">
+      <DependentUpon>musica.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="principal.resx">
       <DependentUpon>principal.vb</DependentUpon>
@@ -144,6 +162,28 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
