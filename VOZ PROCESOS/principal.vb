@@ -2,6 +2,14 @@
 Imports System.IO
 Imports System.Security
 Imports System.Security.Principal
+Imports iTextSharp
+Imports iTextSharp.text
+Imports iTextSharp.text.pdf
+'Imports Microsoft.Office.Interop.Word
+'Imports Microsoft.Office.Interop
+
+
+
 
 Public Class principal
     Public ventanas As Int16
@@ -23,7 +31,7 @@ Public Class principal
 
         'DICCIONARIO
         REC.SetInputToDefaultAudioDevice()
-        REC.LoadGrammar(New Grammar(New GrammarBuilder(New Choices(File.ReadAllLines("../../../gramatica.txt")))
+        REC.LoadGrammar(New Grammar(New GrammarBuilder(New Choices(File.ReadAllLines("../../../gramatica.txt")))))
         REC.RecognizeAsync(RecognizeMode.Multiple)
         AddHandler REC.SpeechRecognized, AddressOf RECONOCE
         AddHandler REC.SpeechRecognitionRejected, AddressOf NORECONOCE
@@ -33,7 +41,7 @@ Public Class principal
 
     Private Sub listener_SpeechRecognized(sender As Object, e As SpeechRecognizedEventArgs) Handles listener.SpeechRecognized
         If (dictar) Then
-            TextBox1.Text += e.Result.Text + " "
+            txt_text.Text += e.Result.Text + " "
         End If
     End Sub
 
@@ -58,7 +66,7 @@ Public Class principal
             apuntadorDireccion.Items.Clear()
             If (dictar = False) Then
                 lbl_corregir.Text = ""
-                TextBox1.Text = ""
+                txt_text.Text = ""
                 lbl_hablando.Text = "Comience a Dictar.."
                 btn_dictar.Text = "Detener"
                 dictar = True
@@ -79,7 +87,7 @@ Public Class principal
             com.leerComando()
 
             Dim RESULTADO As RecognitionResult = e.Result
-            TextBox1.Text = RESULTADO.Text.ToUpper
+            txt_text.Text = RESULTADO.Text.ToUpper
             Dim PROCESO As New Process
             lbl_corregir.Text = "No fue lo que dije!"
         End If
@@ -115,5 +123,70 @@ Public Class principal
         Dim direccion = apuntadorDireccion.Items(id)
         com.abrirAplicacion(direccion, False)
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles dlGuardar.Click
+        Dim autor = "Gabriel"
+        Dim Titulo = "Dictar"
+
+
+        Dim pdfDoc As New Document()
+        Dim pdf As PdfWriter = PdfWriter.GetInstance(pdfDoc, New IO.FileStream("Documento.pdf", FileMode.Create))
+        'Formtos para distintos tamaños de letras
+        Dim bf As iTextSharp.text.Font = FontFactory.GetFont("C:\Windows\Arial Monospaced for SAP", 9)
+        Dim bf1 As iTextSharp.text.Font = FontFactory.GetFont("C:\Windows\Arial Monospaced for SAP", 12)
+        Dim bf2 As iTextSharp.text.Font = FontFactory.GetFont("C:\Windows\Arial Monospaced for SAP", 5)
+        Dim fFont = New iTextSharp.text.Font(bf)
+        Dim fFont1 = New iTextSharp.text.Font(bf1)
+        Dim fFont2 = New iTextSharp.text.Font(bf2)
+        'abrimos el pdf para comenzar a escribir en el, al terminar cerramos
+        pdfDoc.Open()
+        pdfDoc.Add(New Paragraph("   ", fFont1))
+        pdfDoc.Add(New Paragraph("                                                                                  ", fFont2))
+        pdfDoc.Add(New Paragraph("       " + txt_text.Text, fFont1))
+        pdfDoc.Close()
+
+        MsgBox("El fichero PDF se ha generado")
+
+
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim obj As New Object
+
+        Dim archivo As New Object
+
+        Dim ruta As String = "C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\bin\Debug\Archivo.txt" 'Ej: Documentos\archivo1.txt
+
+
+
+        obj = CreateObject("Scripting.FileSystemObject")
+
+        archivo = obj.CreateTextFile(ruta, True)
+
+
+
+        archivo.WriteLine(txt_text.Text)
+        MsgBox("El archivo se ha creado correctamente ")
+
+
+        archivo.close()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim objWord As Object
+        Dim objDoc As Object
+        Dim objSelection As Object
+
+        'Se establece el objeto (word)
+        objWord = CreateObject("Word.Application")
+        objDoc = objWord.Documents.Add
+
+        objWord.Visible = True 'se muestra la aplicación
+
+        objSelection = objWord.Selection
+
+        objSelection.TypeText(txt_text.Text)
+    End Sub
+
 
 End Class

@@ -24,7 +24,7 @@ Partial Class principal
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(principal))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txt_text = New System.Windows.Forms.TextBox()
         Me.btn_escuchar = New System.Windows.Forms.Button()
         Me.lbl_hablando = New System.Windows.Forms.Label()
         Me.btn_dictar = New System.Windows.Forms.Button()
@@ -35,6 +35,9 @@ Partial Class principal
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.dlGuardar = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,17 +48,18 @@ Partial Class principal
         Me.Label1.ForeColor = System.Drawing.Color.Yellow
         Me.Label1.Location = New System.Drawing.Point(13, 36)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 29)
+        Me.Label1.Size = New System.Drawing.Size(0, 36)
         Me.Label1.TabIndex = 0
         '
-        'TextBox1
+        'txt_text
         '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(12, 68)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(349, 157)
-        Me.TextBox1.TabIndex = 1
+        Me.txt_text.Enabled = False
+        Me.txt_text.Location = New System.Drawing.Point(12, 68)
+        Me.txt_text.Multiline = True
+        Me.txt_text.Name = "txt_text"
+        Me.txt_text.Size = New System.Drawing.Size(349, 157)
+        Me.txt_text.TabIndex = 1
+        Me.txt_text.Text = "HOLA HOLA"
         '
         'btn_escuchar
         '
@@ -74,7 +78,7 @@ Partial Class principal
         Me.lbl_hablando.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.lbl_hablando.Location = New System.Drawing.Point(229, 51)
         Me.lbl_hablando.Name = "lbl_hablando"
-        Me.lbl_hablando.Size = New System.Drawing.Size(32, 16)
+        Me.lbl_hablando.Size = New System.Drawing.Size(39, 20)
         Me.lbl_hablando.TabIndex = 3
         Me.lbl_hablando.Text = "___"
         '
@@ -106,7 +110,7 @@ Partial Class principal
         Me.lbl_corregir.LinkColor = System.Drawing.Color.White
         Me.lbl_corregir.Location = New System.Drawing.Point(11, 51)
         Me.lbl_corregir.Name = "lbl_corregir"
-        Me.lbl_corregir.Size = New System.Drawing.Size(32, 16)
+        Me.lbl_corregir.Size = New System.Drawing.Size(39, 20)
         Me.lbl_corregir.TabIndex = 7
         Me.lbl_corregir.TabStop = True
         Me.lbl_corregir.Text = "___"
@@ -114,16 +118,16 @@ Partial Class principal
         'lb_apps
         '
         Me.lb_apps.FormattingEnabled = True
-        Me.lb_apps.ItemHeight = 16
+        Me.lb_apps.ItemHeight = 20
         Me.lb_apps.Location = New System.Drawing.Point(12, 231)
         Me.lb_apps.Name = "lb_apps"
-        Me.lb_apps.Size = New System.Drawing.Size(349, 68)
+        Me.lb_apps.Size = New System.Drawing.Size(349, 64)
         Me.lb_apps.TabIndex = 8
         '
         'apuntadorDireccion
         '
         Me.apuntadorDireccion.FormattingEnabled = True
-        Me.apuntadorDireccion.ItemHeight = 16
+        Me.apuntadorDireccion.ItemHeight = 20
         Me.apuntadorDireccion.Location = New System.Drawing.Point(8, 231)
         Me.apuntadorDireccion.Name = "apuntadorDireccion"
         Me.apuntadorDireccion.Size = New System.Drawing.Size(358, 4)
@@ -146,7 +150,7 @@ Partial Class principal
         Me.RadioButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.RadioButton2.Location = New System.Drawing.Point(104, 10)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(105, 20)
+        Me.RadioButton2.Size = New System.Drawing.Size(126, 24)
         Me.RadioButton2.TabIndex = 1
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "Diccionario"
@@ -158,18 +162,48 @@ Partial Class principal
         Me.RadioButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.RadioButton1.Location = New System.Drawing.Point(6, 10)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(88, 20)
+        Me.RadioButton1.Size = New System.Drawing.Size(105, 24)
         Me.RadioButton1.TabIndex = 0
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Windows"
         Me.RadioButton1.UseVisualStyleBackColor = True
         '
+        'dlGuardar
+        '
+        Me.dlGuardar.Location = New System.Drawing.Point(36, 432)
+        Me.dlGuardar.Name = "dlGuardar"
+        Me.dlGuardar.Size = New System.Drawing.Size(75, 78)
+        Me.dlGuardar.TabIndex = 11
+        Me.dlGuardar.Text = "PDF"
+        Me.dlGuardar.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(146, 432)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 78)
+        Me.Button1.TabIndex = 12
+        Me.Button1.Text = "TXT"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(260, 432)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 78)
+        Me.Button2.TabIndex = 13
+        Me.Button2.Text = "WORD"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'principal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Teal
-        Me.ClientSize = New System.Drawing.Size(375, 423)
+        Me.ClientSize = New System.Drawing.Size(375, 522)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.dlGuardar)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.apuntadorDireccion)
         Me.Controls.Add(Me.lb_apps)
@@ -178,7 +212,7 @@ Partial Class principal
         Me.Controls.Add(Me.btn_dictar)
         Me.Controls.Add(Me.lbl_hablando)
         Me.Controls.Add(Me.btn_escuchar)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txt_text)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4)
@@ -192,7 +226,7 @@ Partial Class principal
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txt_text As TextBox
     Friend WithEvents btn_escuchar As Button
     Friend WithEvents lbl_hablando As Label
     Friend WithEvents btn_dictar As Button
@@ -203,4 +237,7 @@ Partial Class principal
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents dlGuardar As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class

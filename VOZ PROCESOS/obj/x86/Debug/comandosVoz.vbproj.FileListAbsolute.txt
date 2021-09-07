@@ -11,3 +11,18 @@ C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VO
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ PROCESOS.xml
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ PROCESOS.pdb
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\comandosVoz.vbprojResolveAssemblyReference.cache
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\comandosVoz.vbproj.AssemblyReference.cache
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.diccionario.resources
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.manual.resources
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.principal.resources
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.Resources.resources
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\comandosVoz.vbproj.GenerateResource.cache
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\comandosVoz.vbproj.CoreCompileInputs.cache
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\VOZ PROCESOS.exe
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\VOZ PROCESOS.xml
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\VOZ PROCESOS.pdb
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\bin\Debug\VOZ PROCESOS.exe
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\bin\Debug\VOZ PROCESOS.pdb
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\bin\Debug\VOZ PROCESOS.xml
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\bin\Debug\itextsharp.dll
+C:\Users\Gabriel Alvarado\OneDrive\Escritorio\comandosDeVoz\VOZ PROCESOS\obj\x86\Debug\comandosVoz.vbproj.CopyComplete
