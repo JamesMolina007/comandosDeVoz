@@ -22,6 +22,7 @@ Partial Class lectura
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(lectura))
         Me.tb_lectura = New System.Windows.Forms.TextBox()
         Me.btn_buscar = New System.Windows.Forms.Button()
         Me.btn_leer = New System.Windows.Forms.Button()
@@ -37,20 +38,22 @@ Partial Class lectura
         '
         'btn_buscar
         '
+        Me.btn_buscar.BackgroundImage = CType(resources.GetObject("btn_buscar.BackgroundImage"), System.Drawing.Image)
+        Me.btn_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btn_buscar.Location = New System.Drawing.Point(13, 340)
         Me.btn_buscar.Name = "btn_buscar"
-        Me.btn_buscar.Size = New System.Drawing.Size(116, 41)
+        Me.btn_buscar.Size = New System.Drawing.Size(46, 41)
         Me.btn_buscar.TabIndex = 1
-        Me.btn_buscar.Text = "Buscar"
         Me.btn_buscar.UseVisualStyleBackColor = True
         '
         'btn_leer
         '
-        Me.btn_leer.Location = New System.Drawing.Point(136, 340)
+        Me.btn_leer.BackgroundImage = CType(resources.GetObject("btn_leer.BackgroundImage"), System.Drawing.Image)
+        Me.btn_leer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_leer.Location = New System.Drawing.Point(65, 339)
         Me.btn_leer.Name = "btn_leer"
-        Me.btn_leer.Size = New System.Drawing.Size(107, 41)
+        Me.btn_leer.Size = New System.Drawing.Size(61, 41)
         Me.btn_leer.TabIndex = 2
-        Me.btn_leer.Text = "Leer"
         Me.btn_leer.UseVisualStyleBackColor = True
         '
         'lectura
