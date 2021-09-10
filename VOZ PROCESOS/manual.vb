@@ -45,6 +45,7 @@ Public Class manual
         comando.listBox = New ListBox
         comando.listBoxDireccion = New ListBox
         If (diccionario) Then
+            MessageBox.Show("Entro bien")
             REC.SetInputToDefaultAudioDevice()
             REC.LoadGrammar(New Grammar(New GrammarBuilder(New Choices(File.ReadAllLines("../../../gramatica.txt")))))
             REC.RecognizeAsync(RecognizeMode.Multiple)

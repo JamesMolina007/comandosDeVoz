@@ -1,8 +1,15 @@
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\bin\Debug\VOZ PROCESOS.exe
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\bin\Debug\VOZ PROCESOS.pdb
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\bin\Debug\VOZ PROCESOS.xml
+C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\bin\Debug\Interop.WMPLib.dll
+C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\Interop.WMPLib.dll
+C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\AxInterop.WMPLib.dll
+C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\comandosVoz.vbproj.ResolveComReference.cache
+C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.busqueda.resources
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.diccionario.resources
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.manual.resources
+C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.musica.resources
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.principal.resources
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.Resources.resources
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\comandosVoz.vbproj.GenerateResource.Cache
@@ -10,11 +17,3 @@ C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\co
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ PROCESOS.exe
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ PROCESOS.xml
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ PROCESOS.pdb
-C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\comandosVoz.vbprojResolveAssemblyReference.cache
-C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.busqueda.resources
-C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\bin\Debug\Interop.WMPLib.dll
-C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\bin\Debug\AxInterop.WMPLib.dll
-C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\Interop.WMPLib.dll
-C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\AxInterop.WMPLib.dll
-C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\comandosVoz.vbproj.ResolveComReference.cache
-C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.musica.resources

@@ -4,6 +4,10 @@
     "\\VOZ PROCESOS",
     "\\VOZ PROCESOS\\Resources"
   ],
+<<<<<<< HEAD
+  "SelectedNode": "\\VOZ PROCESOS\\comandosVoz.sln",
+=======
   "SelectedNode": "\\gramatica.txt",
+>>>>>>> 65a6eafdb77478529493bf4aeac895ed45c9b55b
   "PreviewInSolutionExplorer": false
 }

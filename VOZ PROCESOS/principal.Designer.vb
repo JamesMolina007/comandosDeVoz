@@ -24,7 +24,6 @@ Partial Class principal
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(principal))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.tb_comando = New System.Windows.Forms.TextBox()
         Me.btn_escuchar = New System.Windows.Forms.Button()
         Me.lbl_hablando = New System.Windows.Forms.Label()
         Me.btn_dictar = New System.Windows.Forms.Button()
@@ -35,6 +34,12 @@ Partial Class principal
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.rb_diccionario = New System.Windows.Forms.RadioButton()
         Me.rb_windows = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.dlGuardar = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.tb_comando = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -48,19 +53,10 @@ Partial Class principal
         Me.Label1.Size = New System.Drawing.Size(0, 29)
         Me.Label1.TabIndex = 0
         '
-        'tb_comando
-        '
-        Me.tb_comando.Enabled = False
-        Me.tb_comando.Location = New System.Drawing.Point(12, 68)
-        Me.tb_comando.Multiline = True
-        Me.tb_comando.Name = "tb_comando"
-        Me.tb_comando.Size = New System.Drawing.Size(349, 157)
-        Me.tb_comando.TabIndex = 1
-        '
         'btn_escuchar
         '
         Me.btn_escuchar.Image = CType(resources.GetObject("btn_escuchar.Image"), System.Drawing.Image)
-        Me.btn_escuchar.Location = New System.Drawing.Point(146, 312)
+        Me.btn_escuchar.Location = New System.Drawing.Point(146, 318)
         Me.btn_escuchar.Name = "btn_escuchar"
         Me.btn_escuchar.Size = New System.Drawing.Size(75, 96)
         Me.btn_escuchar.TabIndex = 2
@@ -81,7 +77,7 @@ Partial Class principal
         'btn_dictar
         '
         Me.btn_dictar.Image = CType(resources.GetObject("btn_dictar.Image"), System.Drawing.Image)
-        Me.btn_dictar.Location = New System.Drawing.Point(36, 312)
+        Me.btn_dictar.Location = New System.Drawing.Point(36, 318)
         Me.btn_dictar.Name = "btn_dictar"
         Me.btn_dictar.Size = New System.Drawing.Size(75, 96)
         Me.btn_dictar.TabIndex = 5
@@ -92,7 +88,7 @@ Partial Class principal
         'btn_Manual
         '
         Me.btn_Manual.Image = CType(resources.GetObject("btn_Manual.Image"), System.Drawing.Image)
-        Me.btn_Manual.Location = New System.Drawing.Point(260, 312)
+        Me.btn_Manual.Location = New System.Drawing.Point(260, 318)
         Me.btn_Manual.Name = "btn_Manual"
         Me.btn_Manual.Size = New System.Drawing.Size(75, 96)
         Me.btn_Manual.TabIndex = 6
@@ -117,7 +113,7 @@ Partial Class principal
         Me.lb_apps.ItemHeight = 16
         Me.lb_apps.Location = New System.Drawing.Point(12, 231)
         Me.lb_apps.Name = "lb_apps"
-        Me.lb_apps.Size = New System.Drawing.Size(349, 68)
+        Me.lb_apps.Size = New System.Drawing.Size(349, 52)
         Me.lb_apps.TabIndex = 8
         '
         'apuntadorDireccion
@@ -143,6 +139,7 @@ Partial Class principal
         'rb_diccionario
         '
         Me.rb_diccionario.AutoSize = True
+        Me.rb_diccionario.Checked = True
         Me.rb_diccionario.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.rb_diccionario.Location = New System.Drawing.Point(104, 10)
         Me.rb_diccionario.Name = "rb_diccionario"
@@ -160,16 +157,78 @@ Partial Class principal
         Me.rb_windows.Name = "rb_windows"
         Me.rb_windows.Size = New System.Drawing.Size(88, 20)
         Me.rb_windows.TabIndex = 0
-        Me.rb_windows.TabStop = True
         Me.rb_windows.Text = "Windows"
         Me.rb_windows.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.RadioButton2.Location = New System.Drawing.Point(104, 10)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(126, 24)
+        Me.RadioButton2.TabIndex = 1
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "Diccionario"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.RadioButton1.Location = New System.Drawing.Point(6, 10)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(105, 24)
+        Me.RadioButton1.TabIndex = 0
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Windows"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'dlGuardar
+        '
+        Me.dlGuardar.Location = New System.Drawing.Point(36, 289)
+        Me.dlGuardar.Name = "dlGuardar"
+        Me.dlGuardar.Size = New System.Drawing.Size(75, 23)
+        Me.dlGuardar.TabIndex = 11
+        Me.dlGuardar.Text = "PDF"
+        Me.dlGuardar.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(146, 289)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 12
+        Me.Button1.Text = "TXT"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(260, 289)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 13
+        Me.Button2.Text = "WORD"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'tb_comando
+        '
+        Me.tb_comando.Enabled = False
+        Me.tb_comando.Location = New System.Drawing.Point(12, 68)
+        Me.tb_comando.Multiline = True
+        Me.tb_comando.Name = "tb_comando"
+        Me.tb_comando.Size = New System.Drawing.Size(349, 157)
+        Me.tb_comando.TabIndex = 1
         '
         'principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Teal
-        Me.ClientSize = New System.Drawing.Size(375, 423)
+        Me.ClientSize = New System.Drawing.Size(375, 431)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.dlGuardar)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.apuntadorDireccion)
         Me.Controls.Add(Me.lb_apps)
@@ -192,7 +251,7 @@ Partial Class principal
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents tb_comando As TextBox
+
     Friend WithEvents btn_escuchar As Button
     Friend WithEvents lbl_hablando As Label
     Friend WithEvents btn_dictar As Button
@@ -201,6 +260,14 @@ Partial Class principal
     Friend WithEvents lb_apps As ListBox
     Friend WithEvents apuntadorDireccion As ListBox
     Friend WithEvents GroupBox1 As GroupBox
+
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents dlGuardar As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+
     Friend WithEvents rb_diccionario As RadioButton
     Friend WithEvents rb_windows As RadioButton
+    Friend WithEvents tb_comando As TextBox
 End Class

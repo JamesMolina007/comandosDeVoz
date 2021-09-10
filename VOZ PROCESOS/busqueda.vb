@@ -23,7 +23,7 @@
         Dim tokens = tb_busqueda.Text.Split(" ")
         Dim cadena As String
         If (Me.Text <> "Páginas Web") Then
-            If (Me.Text = "Música") Then
+            If (Me.Text = "Video") Then
                 cadena = "https://www.youtube.com/results?search_query="
             ElseIf (Me.Text = "Busqueda") Then
                 cadena = "https://www.google.com/search?q="

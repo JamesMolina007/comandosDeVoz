@@ -58,7 +58,7 @@ Public Class comando
 
         ElseIf (elementosComando(0).Contains("bus")) Then
             If (elementosComando.Contains("video")) Then
-                web("Música", "Canción a Buscar: ")
+                web("Video", "Video a Buscar: ")
             ElseIf (elementosComando.Contains("pagina")) Then
                 web("Páginas Web", "URL:")
             Else
