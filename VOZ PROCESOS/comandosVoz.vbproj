@@ -93,6 +93,12 @@
     <Compile Include="diccionario.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="lectura.Designer.vb">
+      <DependentUpon>lectura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lectura.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="manual.Designer.vb">
       <DependentUpon>manual.vb</DependentUpon>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="diccionario.resx">
       <DependentUpon>diccionario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lectura.resx">
+      <DependentUpon>lectura.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="manual.resx">
       <DependentUpon>manual.vb</DependentUpon>

@@ -37,7 +37,7 @@ Public Class comando
         Dim valores = Split(_cadenaComando, " ")
         Dim i = 0, j = 0
         For index = 0 To valores.Length - 1
-            If (valores(index).Contains("abr") Or valores(index).Contains("bus") Or valores(index).Contains("reprod") Or valores(index).Contains("cre") Or valores(index).Contains("cont") Or valores(index).Contains("cuent") Or valores(index).Contains("ejecut") Or valores(index).Contains("cierr") Or valores(index).Contains("cerra") Or valores(index).Contains("cumpl")) Then
+            If (valores(index).Contains("abr") Or valores(index).Contains("bus") Or valores(index).Contains("reprod") Or valores(index).Contains("cre") Or valores(index).Contains("cont") Or valores(index).Contains("cuent") Or valores(index).Contains("ejecut") Or valores(index).Contains("cierr") Or valores(index).Contains("cerra") Or valores(index).Contains("cumpl") Or valores(index).Contains("lee")) Then
                 i = index
                 Exit For
             End If
@@ -76,6 +76,9 @@ Public Class comando
 
         ElseIf (elementosComando(0).Contains("cumpl") And (elementosComando.Contains("año") Or elementosComando.Contains("años"))) Then
             cumpleAños()
+
+        ElseIf (elementosComando(0).Contains("lee")) Then
+            leerTexto()
         End If
 
     End Sub
@@ -205,6 +208,11 @@ Public Class comando
         My.Computer.Audio.Play("../../Resources/happyB.wav", AudioPlayMode.WaitToComplete)
         Dim SAPI = CreateObject("SAPI.spvoice")
         SAPI.Speak("Feliz Cumpleaños amigo, te quiero")
+    End Sub
+
+    Private Sub leerTexto()
+        Dim lectura As New lectura
+        lectura.Visible = True
     End Sub
 
 End Class

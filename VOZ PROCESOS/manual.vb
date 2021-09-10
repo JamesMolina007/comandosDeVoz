@@ -39,8 +39,8 @@ Public Class manual
         manualDictar = {"Para dictar hable al micrófono de su dispositivo (utilice audifonos preferiblemente)"}
         manualArchivo = {"Para crear archivos diga: ""Crear Archivo"""}
         manualMusica = {"Para ingresar al reproductor de música diga: ""Reproducir Música""", "Para ingresar al reproductor de música diga: ""Buscar Música"""}
-        manualBusqueda = {"Para hacer una busqueda web diga: ""Buscar""", "Para buscar un video diga: ""Buscar video"""}
-        manualExtra = {"Si desea escuchar un chiste diga: ""Cuentame un chiste""", "Si desea que le canten happy birthday diga: ""Estoy cumpliendo años"""}
+        manualBusqueda = {"Para hacer una busqueda web diga: ""Buscar""", "Para buscar un video diga: ""Buscar video""", "Para buscar una página diga:""Buscar página """}
+        manualExtra = {"Si desea escuchar un chiste diga: ""Cuentame un chiste""", "Si desea que le canten happy birthday diga: ""Estoy cumpliendo años""", "Si desea guardar el texto diga: ""Guardar texto"""}
 
         comando.listBox = New ListBox
         comando.listBoxDireccion = New ListBox
@@ -87,7 +87,7 @@ Public Class manual
     End Sub
 
     Private Sub lbl_extras_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lbl_extras.LinkClicked
-        comandoDisponible = {"cuentame un chiste", "cumplo años"}
+        comandoDisponible = {"cuentame un chiste", "cumplo años", "guardar texto"}
         otraCategoria(manualExtra)
     End Sub
 

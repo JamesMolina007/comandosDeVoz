@@ -19,6 +19,7 @@ Public Class principal
     'DICCIONARIO
     Private REC As New SpeechRecognitionEngine
     Private PALABRA As String
+    Private DIC As New SpeechRecognitionEngine
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'WINDOWS
@@ -32,7 +33,11 @@ Public Class principal
         AddHandler REC.SpeechRecognized, AddressOf RECONOCE
         AddHandler REC.SpeechRecognitionRejected, AddressOf NORECONOCE
 
-
+        DIC.SetInputToDefaultAudioDevice()
+        DIC.LoadGrammar(New Grammar(New GrammarBuilder(New Choices(File.ReadAllLines("../../../palabrasEspañol.txt")))))
+        DIC.RecognizeAsync(RecognizeMode.Multiple)
+        AddHandler DIC.SpeechRecognized, AddressOf RECONOCEDICTADO
+        AddHandler DIC.SpeechRecognitionRejected, AddressOf NORECONOCEDICTADO
     End Sub
 
     Private Sub rb_diccionario_CheckedChanged(sender As Object, e As EventArgs) Handles rb_diccionario.CheckedChanged
@@ -56,12 +61,12 @@ Public Class principal
             lbl_corregir.Text = "No fue lo que dije!"
         ElseIf (dictar And reconocedorWindows) Then
             Dim RESULTADO As RecognitionResult = e.Result
-            tb_comando.Text = RESULTADO.Text.ToUpper
+            tb_comando.Text += " " & RESULTADO.Text.ToUpper
         End If
     End Sub
 
     Private Sub btn_escuchar_Click(sender As Object, e As EventArgs) Handles btn_escuchar.Click
-        tb_comando.Enabled = True
+        tb_comando.Enabled = False
         If (dictar = False) Then
             If (hablar = False) Then
                 hablar = True
@@ -109,14 +114,25 @@ Public Class principal
             tb_comando.Text = RESULTADO.Text.ToUpper
             Dim PROCESO As New Process
             lbl_corregir.Text = "No fue lo que dije!"
-        ElseIf (dictar And Not reconocedorWindows) Then
-            Dim RESULTADO As RecognitionResult = e.Result
-            tb_comando.Text = RESULTADO.Text.ToUpper
         End If
     End Sub
 
 
     Public Sub NORECONOCE()
+        If (hablar) Then
+            lbl_hablando.Text = "REPITE, POR FAVOR"
+        End If
+    End Sub
+
+    Public Sub RECONOCEDICTADO(ByVal sender As Object, ByVal e As SpeechRecognizedEventArgs)
+        If (dictar And Not reconocedorWindows) Then
+            Dim RESULTADO As RecognitionResult = e.Result
+            tb_comando.Text += " " & RESULTADO.Text.ToUpper
+        End If
+    End Sub
+
+
+    Public Sub NORECONOCEDICTADO()
         If (hablar) Then
             lbl_hablando.Text = "REPITE, POR FAVOR"
         End If
@@ -139,11 +155,12 @@ Public Class principal
     End Sub
 
     Private Sub btn_Manual_Click(sender As Object, e As EventArgs) Handles btn_Manual.Click
-        ventanas += 1
+        'ventanas += 1
+        tb_comando.Enabled = False
         Dim instrucciones As New manual
         instrucciones.diccionario = (Not reconocedorWindows)
         instrucciones.Visible = True
-        Me.Close()
+        'Me.Close()
     End Sub
 
     Private Sub lb_apps_DoubleClick(sender As Object, e As EventArgs) Handles lb_apps.DoubleClick
@@ -175,10 +192,7 @@ Public Class principal
         pdfDoc.Add(New Paragraph("                                                                                  ", fFont2))
         pdfDoc.Add(New Paragraph("       " + tb_comando.Text, fFont1))
         pdfDoc.Close()
-
         MsgBox("El PDF se ha generado correctamente")
-
-
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
