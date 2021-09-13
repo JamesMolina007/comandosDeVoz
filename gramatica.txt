@@ -14,6 +14,8 @@ cerrar discord
 cerrar netflix
 abrir arduino
 cerrar arduino
+abrir firefox
+cerrar firefox
 cuentame un chiste
 crear archivo
 abrir Google Chrome
@@ -30,3 +32,12 @@ buscar musica
 cumplo años
 estoy cumpliendo años
 leer
+buscar pagina
+abrir microsoft edge
+cerrar microsoft edge
+abrir wordpad
+cerrar wordpad
+ejecuta word
+ejecuta paint
+ejecuta excel
+ejecuta powerpoint

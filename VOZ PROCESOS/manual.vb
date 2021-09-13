@@ -45,7 +45,6 @@ Public Class manual
         comando.listBox = New ListBox
         comando.listBoxDireccion = New ListBox
         If (diccionario) Then
-            MessageBox.Show("Entro bien")
             REC.SetInputToDefaultAudioDevice()
             REC.LoadGrammar(New Grammar(New GrammarBuilder(New Choices(File.ReadAllLines("../../../gramatica.txt")))))
             REC.RecognizeAsync(RecognizeMode.Multiple)
@@ -82,12 +81,12 @@ Public Class manual
     End Sub
 
     Private Sub lbl_busqueda_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lbl_busqueda.LinkClicked
-        comandoDisponible = {"buscar", "buscar video"}
+        comandoDisponible = {"buscar", "buscar video", "buscar pagina"}
         otraCategoria(manualBusqueda)
     End Sub
 
     Private Sub lbl_extras_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lbl_extras.LinkClicked
-        comandoDisponible = {"cuentame un chiste", "cumplo años", "leer"}
+        comandoDisponible = {"cuentame un chiste", "estoy cumpliendo años", "leer"}
         otraCategoria(manualExtra)
     End Sub
 

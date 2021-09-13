@@ -20,6 +20,7 @@ Public Class diccionario
             Try
                 If (cb_categoria.SelectedIndex = 0) Then
                     escribir.WriteLine("abrir " + tb_palabra.Text)
+                    escribir.WriteLine("ejecuta " + tb_palabra.Text)
                     escribir.WriteLine("cerrar " + tb_palabra.Text)
                 Else
                     escribir.WriteLine(tb_palabra.Text)

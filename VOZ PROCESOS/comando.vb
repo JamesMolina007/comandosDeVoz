@@ -37,7 +37,7 @@ Public Class comando
         Dim valores = Split(_cadenaComando, " ")
         Dim i = 0, j = 0
         For index = 0 To valores.Length - 1
-            If (valores(index).Contains("abr") Or valores(index).Contains("bus") Or valores(index).Contains("reprod") Or valores(index).Contains("cre") Or valores(index).Contains("cont") Or valores(index).Contains("cuent") Or valores(index).Contains("ejecut") Or valores(index).Contains("cierr") Or valores(index).Contains("cerra") Or valores(index).Contains("cumpl") Or valores(index).Contains("lee")) Then
+            If (valores(index).Contains("abr") Or valores(index).Contains("ejecut") Or valores(index).Contains("bus") Or valores(index).Contains("reprod") Or valores(index).Contains("cre") Or valores(index).Contains("cont") Or valores(index).Contains("cuent") Or valores(index).Contains("ejecut") Or valores(index).Contains("cierr") Or valores(index).Contains("cerra") Or valores(index).Contains("cumpl") Or valores(index).Contains("lee")) Then
                 i = index
                 Exit For
             End If
