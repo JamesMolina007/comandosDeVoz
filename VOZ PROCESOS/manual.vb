@@ -161,7 +161,9 @@ Public Class manual
 
     Private Sub listener_SpeechRecognized(sender As Object, e As SpeechRecognizedEventArgs) Handles listener.SpeechRecognized
         If (hablar) Then
-            If (comandoDisponible(numManual) = e.Result.Text) Then
+            Dim resultado = e.Result.Text.ToLower
+            resultado = eliminar_Tildes(resultado)
+            If (comandoDisponible(numManual) = resultado) Then
                 comando.cadenaComando = comandoDisponible(numManual)
                 comando.leerComando()
                 lbl_repetir.Text = ""
@@ -170,5 +172,11 @@ Public Class manual
             End If
         End If
     End Sub
+
+    Public Function eliminar_Tildes(ByVal accentedStr As String) As String
+        Dim tempBytes As Byte()
+        tempBytes = System.Text.Encoding.GetEncoding("ISO-8859-8").GetBytes(accentedStr)
+        Return System.Text.Encoding.UTF8.GetString(tempBytes)
+    End Function
 
 End Class

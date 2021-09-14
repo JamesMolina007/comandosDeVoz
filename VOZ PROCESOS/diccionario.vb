@@ -19,9 +19,11 @@ Public Class diccionario
             Dim escribir As New StreamWriter("../../../gramatica.txt", True)
             Try
                 If (cb_categoria.SelectedIndex = 0) Then
-                    escribir.WriteLine("abrir " + tb_palabra.Text)
-                    escribir.WriteLine("ejecuta " + tb_palabra.Text)
-                    escribir.WriteLine("cerrar " + tb_palabra.Text)
+                    Dim resultado = tb_palabra.Text.ToLower
+                    resultado = eliminar_Tildes(resultado)
+                    escribir.WriteLine("abrir " + resultado)
+                    escribir.WriteLine("ejecuta " + resultado)
+                    escribir.WriteLine("cerrar " + resultado)
                 Else
                     escribir.WriteLine(tb_palabra.Text)
                 End If
@@ -33,6 +35,12 @@ Public Class diccionario
             End Try
         End If
     End Sub
+
+    Public Function eliminar_Tildes(ByVal accentedStr As String) As String
+        Dim tempBytes As Byte()
+        tempBytes = System.Text.Encoding.GetEncoding("ISO-8859-8").GetBytes(accentedStr)
+        Return System.Text.Encoding.UTF8.GetString(tempBytes)
+    End Function
 
     Private Sub diccionario_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Dim p As New principal
