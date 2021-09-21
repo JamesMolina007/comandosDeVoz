@@ -1,7 +1,6 @@
 abrir word
 abrir powerpoint
 abrir excel
-abrir paint
 abrir visual studio code
 abrir discord
 abrir netflix
@@ -35,9 +34,10 @@ leer
 buscar pagina
 abrir microsoft edge
 cerrar microsoft edge
-abrir wordpad
-cerrar wordpad
 ejecuta word
 ejecuta paint
 ejecuta excel
 ejecuta powerpoint
+abrir paint
+ejecuta paint
+cerrar paint

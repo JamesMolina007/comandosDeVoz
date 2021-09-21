@@ -91,10 +91,10 @@ Partial Class manual
         Me.lbl_archivos.LinkColor = System.Drawing.Color.Black
         Me.lbl_archivos.Location = New System.Drawing.Point(6, 109)
         Me.lbl_archivos.Name = "lbl_archivos"
-        Me.lbl_archivos.Size = New System.Drawing.Size(126, 20)
+        Me.lbl_archivos.Size = New System.Drawing.Size(131, 20)
         Me.lbl_archivos.TabIndex = 3
         Me.lbl_archivos.TabStop = True
-        Me.lbl_archivos.Text = "Crear Archivos"
+        Me.lbl_archivos.Text = "Crear Carpetas"
         '
         'lbl_musica
         '

@@ -81,7 +81,7 @@ Public Class comando
         ElseIf ((elementosComando(0).Contains("cont") Or elementosComando(0).Contains("cuent")) And elementosComando.Contains("chiste")) Then
             chiste()
 
-        ElseIf (elementosComando(0).Contains("cumpl") And (elementosComando.Contains("año") Or elementosComando.Contains("años"))) Then
+        ElseIf (elementosComando(0).Contains("cumpl") And (elementosComando.Contains("año") Or elementosComando.Contains("anos") Or elementosComando.Contains("ano") Or elementosComando.Contains("años"))) Then
             cumpleAños()
 
         ElseIf (elementosComando(0).Contains("lee")) Then
@@ -223,6 +223,7 @@ Public Class comando
     End Sub
 
     'Canta la canción de feliz cumpleaños
+    'Canción obtenida de https://www.youtube.com/watch?v=3LRKAIredbw
     Private Sub cumpleAños()
         My.Computer.Audio.Play("../../Resources/happyB.wav", AudioPlayMode.WaitToComplete)
         Dim SAPI = CreateObject("SAPI.spvoice")

@@ -40,7 +40,7 @@ Public Class manual
         manualAplicacion = {"Para abrir una aplicación diga:" + vbNewLine + """Abrir *Nombre Aplicacion*""" + vbNewLine + "Por ejemplo: Abrir Paint", "Para cerrar una aplicación diga:" + vbNewLine + """Cerrar *Nombre Aplicacion*""" + vbNewLine + "Por ejemplo: Cerrar Paint"}
         manualWeb = {"Para hacer una busqueda web diga: ""Buscar""", "Para buscar un video diga: ""Buscar video""", "Para buscar una página diga: ""Buscar Página"""}
         manualDictar = {"Para dictar hable al micrófono de su dispositivo (utilice audifonos preferiblemente)"}
-        manualArchivo = {"Para crear archivos diga: ""Crear Archivo"""}
+        manualArchivo = {"Para crear carpetas diga: ""Crear Carpetas"""}
         manualMusica = {"Para ingresar al reproductor de música diga: ""Reproducir Música""", "Para ingresar al reproductor de música diga: ""Buscar Música"""}
         manualBusqueda = {"Para hacer una busqueda web diga: ""Buscar""", "Para buscar un video diga: ""Buscar video""", "Para buscar una página diga:""Buscar página """}
         manualExtra = {"Si desea escuchar un chiste diga: ""Cuentame un chiste""", "Si desea que le canten happy birthday diga: ""Estoy cumpliendo años""", "Si desea que se le lea algun texto diga: ""leer"""}
@@ -78,7 +78,7 @@ Public Class manual
     End Sub
 
     Private Sub lbl_archivos_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lbl_archivos.LinkClicked
-        comandoDisponible = {"crear archivo"}
+        comandoDisponible = {"crear carpeta"}
         otraCategoria(manualArchivo)
     End Sub
 
