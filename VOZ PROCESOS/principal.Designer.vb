@@ -36,9 +36,9 @@ Partial Class principal
         Me.rb_windows = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.dlGuardar = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btn_guardarPDF = New System.Windows.Forms.Button()
+        Me.btn_guardarTXT = New System.Windows.Forms.Button()
+        Me.btn_guardarWord = New System.Windows.Forms.Button()
         Me.tb_comando = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -184,32 +184,32 @@ Partial Class principal
         Me.RadioButton1.Text = "Windows"
         Me.RadioButton1.UseVisualStyleBackColor = True
         '
-        'dlGuardar
+        'btn_guardarPDF
         '
-        Me.dlGuardar.Location = New System.Drawing.Point(36, 289)
-        Me.dlGuardar.Name = "dlGuardar"
-        Me.dlGuardar.Size = New System.Drawing.Size(75, 23)
-        Me.dlGuardar.TabIndex = 11
-        Me.dlGuardar.Text = "PDF"
-        Me.dlGuardar.UseVisualStyleBackColor = True
+        Me.btn_guardarPDF.Location = New System.Drawing.Point(36, 289)
+        Me.btn_guardarPDF.Name = "btn_guardarPDF"
+        Me.btn_guardarPDF.Size = New System.Drawing.Size(75, 23)
+        Me.btn_guardarPDF.TabIndex = 11
+        Me.btn_guardarPDF.Text = "PDF"
+        Me.btn_guardarPDF.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btn_guardarTXT
         '
-        Me.Button1.Location = New System.Drawing.Point(146, 289)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 12
-        Me.Button1.Text = "TXT"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_guardarTXT.Location = New System.Drawing.Point(146, 289)
+        Me.btn_guardarTXT.Name = "btn_guardarTXT"
+        Me.btn_guardarTXT.Size = New System.Drawing.Size(75, 23)
+        Me.btn_guardarTXT.TabIndex = 12
+        Me.btn_guardarTXT.Text = "TXT"
+        Me.btn_guardarTXT.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btn_guardarWord
         '
-        Me.Button2.Location = New System.Drawing.Point(260, 289)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 13
-        Me.Button2.Text = "WORD"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_guardarWord.Location = New System.Drawing.Point(260, 289)
+        Me.btn_guardarWord.Name = "btn_guardarWord"
+        Me.btn_guardarWord.Size = New System.Drawing.Size(75, 23)
+        Me.btn_guardarWord.TabIndex = 13
+        Me.btn_guardarWord.Text = "WORD"
+        Me.btn_guardarWord.UseVisualStyleBackColor = True
         '
         'tb_comando
         '
@@ -226,9 +226,9 @@ Partial Class principal
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Teal
         Me.ClientSize = New System.Drawing.Size(375, 431)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.dlGuardar)
+        Me.Controls.Add(Me.btn_guardarWord)
+        Me.Controls.Add(Me.btn_guardarTXT)
+        Me.Controls.Add(Me.btn_guardarPDF)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.apuntadorDireccion)
         Me.Controls.Add(Me.lb_apps)
@@ -263,9 +263,9 @@ Partial Class principal
 
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents dlGuardar As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btn_guardarPDF As Button
+    Friend WithEvents btn_guardarTXT As Button
+    Friend WithEvents btn_guardarWord As Button
 
     Friend WithEvents rb_diccionario As RadioButton
     Friend WithEvents rb_windows As RadioButton

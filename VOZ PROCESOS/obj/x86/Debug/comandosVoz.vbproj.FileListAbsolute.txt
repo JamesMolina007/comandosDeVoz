@@ -8,6 +8,7 @@ C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\Ax
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\comandosVoz.vbproj.ResolveComReference.cache
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.busqueda.resources
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.diccionario.resources
+C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.lectura.resources
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.manual.resources
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.musica.resources
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.principal.resources
@@ -18,4 +19,3 @@ C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VO
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ PROCESOS.xml
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ PROCESOS.pdb
 C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\comandosVoz.vbprojResolveAssemblyReference.cache
-C:\Users\James Josué Molina\Desktop\comandoPrueba\VOZ PROCESOS\obj\x86\Debug\VOZ_PROCESOS.lectura.resources

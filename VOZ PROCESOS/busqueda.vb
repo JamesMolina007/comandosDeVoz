@@ -1,4 +1,5 @@
 ﻿Public Class busqueda
+    'Property que contiene los mutadores del titulo
     Private _titulo As String
     Public Property titulo() As String
         Get
@@ -35,7 +36,7 @@
         Else
             cadena = tb_busqueda.Text
         End If
-        System.Diagnostics.Process.Start(cadena)
+        System.Diagnostics.Process.Start(cadena) 'Realiza el proceso de busqueda de página
     End Sub
 
 End Class

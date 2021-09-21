@@ -66,7 +66,7 @@ Partial Class busqueda
         Me.Controls.Add(Me.tb_busqueda)
         Me.Name = "busqueda"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Busqueda"
+        Me.Text = " "
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

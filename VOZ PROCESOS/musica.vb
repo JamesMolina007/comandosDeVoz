@@ -1,11 +1,12 @@
 ﻿Public Class musica
     Private numeroCancion = -1
 
+    'Evento del boton de reproducir canciones
     Private Sub btn_reproducir_Click(sender As Object, e As EventArgs) Handles btn_reproducir.Click
         Try
-            AxWindowsMediaPlayer1.URL = lb_direcciones.Items(lb_cola.SelectedIndex)
-            siguienteAnterior(lb_cola.SelectedIndex)
-            numeroCancion = lb_cola.SelectedIndex
+            AxWindowsMediaPlayer1.URL = lb_direcciones.Items(lb_cola.SelectedIndex) 'Le indica al componente la canción a reproducir
+            siguienteAnterior(lb_cola.SelectedIndex) 'Muestra la siguiente canción, la anterior y la actual en labels
+            numeroCancion = lb_cola.SelectedIndex 'Actualiza el numero de la canción ejecutandose
         Catch err As Exception
             MessageBox.Show("Debe agregar al menos una canción a la cola o Seleccionarla")
         End Try
@@ -15,6 +16,7 @@
 
     End Sub
 
+    'Avanza a la siguiente canción de la cola si existe
     Private Sub btn_Siguiente_Click(sender As Object, e As EventArgs) Handles btn_Siguiente.Click
         Try
             numeroCancion += 1
@@ -26,6 +28,7 @@
         End Try
     End Sub
 
+    'Retrocede de canción si existe
     Private Sub btn_Anterior_Click(sender As Object, e As EventArgs) Handles btn_Anterior.Click
         Try
             numeroCancion -= 1
@@ -37,6 +40,7 @@
         End Try
     End Sub
 
+    'Agrega una canción a la cola
     Private Sub btn_agregarCola_Click(sender As Object, e As EventArgs) Handles btn_agregarCola.Click
         Try
             Dim abrirArchivo As New OpenFileDialog With {.Filter = "Archivos Mpeg Layer 3 (*.mp3)|*.mp3|Listas de canciones (*.m3u)|*.m3u"}
@@ -51,6 +55,7 @@
         End Try
     End Sub
 
+    'Elimina los elementos de la cola de canciones
     Private Sub btn_limpiarCola_Click(sender As Object, e As EventArgs) Handles btn_limpiarCola.Click
         Try
             lb_direcciones.Items.Clear()
@@ -62,6 +67,7 @@
         End Try
     End Sub
 
+    'Quita el elemento seleccionado de la cola de canciones
     Private Sub btn_quitarDeCola_Click(sender As Object, e As EventArgs) Handles btn_quitarDeCola.Click
         Try
             lb_direcciones.Items.RemoveAt(lb_cola.SelectedIndex)
@@ -72,6 +78,7 @@
         End Try
     End Sub
 
+    'Escribe en labels el nombre de la canción ejecutandose, la anterior y la siguiente
     Private Sub siguienteAnterior(numero As Int16)
         Try
             If (numero > 0) Then

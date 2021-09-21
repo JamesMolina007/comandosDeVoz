@@ -36,6 +36,7 @@ Partial Class manual
         Me.btn_anterior = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lbl_repetir = New System.Windows.Forms.Label()
+        Me.lbl_hablado = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -140,10 +141,10 @@ Partial Class manual
         'tb_tutorial
         '
         Me.tb_tutorial.Enabled = False
-        Me.tb_tutorial.Location = New System.Drawing.Point(171, 14)
+        Me.tb_tutorial.Location = New System.Drawing.Point(171, 31)
         Me.tb_tutorial.Multiline = True
         Me.tb_tutorial.Name = "tb_tutorial"
-        Me.tb_tutorial.Size = New System.Drawing.Size(256, 201)
+        Me.tb_tutorial.Size = New System.Drawing.Size(256, 184)
         Me.tb_tutorial.TabIndex = 7
         '
         'btn_hablar
@@ -209,12 +210,22 @@ Partial Class manual
         Me.lbl_repetir.Size = New System.Drawing.Size(0, 18)
         Me.lbl_repetir.TabIndex = 12
         '
+        'lbl_hablado
+        '
+        Me.lbl_hablado.AutoSize = True
+        Me.lbl_hablado.Location = New System.Drawing.Point(171, 12)
+        Me.lbl_hablado.Name = "lbl_hablado"
+        Me.lbl_hablado.Size = New System.Drawing.Size(25, 13)
+        Me.lbl_hablado.TabIndex = 13
+        Me.lbl_hablado.Text = "___"
+        '
         'manual
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(439, 312)
+        Me.Controls.Add(Me.lbl_hablado)
         Me.Controls.Add(Me.lbl_repetir)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btn_anterior)
@@ -244,4 +255,5 @@ Partial Class manual
     Friend WithEvents btn_anterior As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents lbl_repetir As Label
+    Friend WithEvents lbl_hablado As Label
 End Class
